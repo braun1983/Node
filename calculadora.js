@@ -2,13 +2,14 @@ const prompt = require('prompt-sync')();
 
 function entraNumero() {
     console.log ("Calculadora");
-    
+
     var operacao = prompt('Que operação deseja fazer? (*, /, +, -): ');
     if (operacao =="*" || operacao=="/" || operacao == "+"|| operacao== "-"){
     var num1 = parseInt(prompt('Digite o primeiro número: '));
     var num2 = parseInt(prompt('Digite o segundo número: '));
     checaOperacao(operacao, num1, num2);
-}else{
+
+} else{
     console.log ("Operação Inválida!");
 }
 
@@ -55,13 +56,15 @@ function checaOperacao(operacao, num1, num2) {
 
 function pergunta (){
     const pergunta = prompt("Deseja continuar? (S/N)");
+
     if (pergunta.toLowerCase()==='s'){
         entraNumero();
     }else{
         console.log('Programa finalizado')
     }
-r
+
 }
+
 entraNumero();
 pergunta();
 
