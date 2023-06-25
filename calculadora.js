@@ -5,7 +5,7 @@ function entraNumero() {
 
     var operacao = prompt('Que operação deseja fazer? (*, /, +, -): ');
     if (operacao =="*" || operacao=="/" || operacao == "+"|| operacao== "-"){
-    var num1 = parseInt(prompt('Digite o primeiro número: '));
+    var num1 = parseInt(prompt('Digite o primeiro ncelarúmero: '));
     var num2 = parseInt(prompt('Digite o segundo número: '));
     checaOperacao(operacao, num1, num2);
 
